@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.date {
+  width: 121px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #A1A1AA;
+}
+
+.title {
+  width: 197px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1%;
+  color: #272729;
+}
+
+.paragraph {
+  width: 400%; /* Adjusted width to fill the container */
+  max-width: 512px; /* Added max-width to ensure readability on larger screens */
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #52525B;
+}
+
+.read-article {
+  display: inline-flex; /* Changed display to inline-flex */
+  align-items: center;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #14B8A6;
+  text-decoration: none; /* Added to remove underline */
+}
+
+.chevron-icon {
+  width: 4.75px;
+  height: 7.98px;
+  margin-left: 6px;
+  fill: #14B8A6;
+}

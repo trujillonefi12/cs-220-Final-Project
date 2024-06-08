@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.hover-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #14b8a6; /* Customize this color as needed */
+  transition: width 0.3s;
+}
+
+.hover-line:hover::after,
+.hover-line.active::after {
+  width: 100%;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
