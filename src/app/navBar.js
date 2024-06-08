@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import ThemeSwitcher from "./themeSwitcher.js"
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -61,15 +62,15 @@ export default function Navbar() {
                                             className={`text-black ${activeLink === '/services' ? 'text-green-500' : ''} px-1 py-1 rounded-md text-xs font-medium hover-line ${activeLink === '/services' ? 'active' : ''}`}
                                             onClick={() => handleLinkClick('/services')}
                                         >
-                                            Services
+                                            Projects
                                         </span>
                                     </Link>
-                                    <Link href="/contact" passHref>
+                                    <Link href="/UsesSection" passHref>
                                         <span
                                             className={`text-black ${activeLink === '/contact' ? 'text-green-500' : ''} px-1 py-1 rounded-md text-xs font-medium hover-line ${activeLink === '/contact' ? 'active' : ''}`}
                                             onClick={() => handleLinkClick('/contact')}
                                         >
-                                            Contact
+                                            Uses
                                         </span>
                                     </Link>
                                 </div>
@@ -103,21 +104,22 @@ export default function Navbar() {
                                     className={`text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover-line ${activeLink === '/services' ? 'active' : ''}`}
                                     onClick={() => handleLinkClick('/services')}
                                 >
-                                    Services
+                                    Projects
                                 </span>
                             </Link>
-                            <Link href="/contact" passHref>
+                            <Link href="/UsesSection" passHref>
                                 <span
                                     className={`text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover-line ${activeLink === '/contact' ? 'active' : ''}`}
                                     onClick={() => handleLinkClick('/contact')}
                                 >
-                                    Contact
+                                    Uses
                                 </span>
                             </Link>
                         </div>
                     </div>
                 )}
             </nav>
+
         </div>
     );
 }
